@@ -1,3 +1,4 @@
+import java.awt.Shape;
 import java.util.Random;
 public class ShapeUtilities implements Shapes
 {
@@ -14,5 +15,25 @@ public class ShapeUtilities implements Shapes
 			default:
 				return new Circle(10);
 		}
+	}
+	
+	public static double sumPeri(Shape[] shapeArr)
+	{
+		double sum = 0;
+		for (int i = 0; i < shapeArr.length; i++)
+		{
+			sum += shapeArr[i].perimeter();
+ 		}
+		return sum;
+	}
+	
+	public static double sumArea(Shape[] shapeArr)
+	{
+		double sum = 0;
+		for (int i = 0; i < shapeArr.length; i++)
+		{
+			sum += shapeArr[i].area();
+		}
+		return sum;
 	}
 }
