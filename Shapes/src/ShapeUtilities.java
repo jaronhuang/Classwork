@@ -5,7 +5,7 @@ public class ShapeUtilities implements Shapes
 	public static Shapes getRandomShape()
 	{
 		Random r = new Random();
-		int x = r.nextInt(3);
+		int x = r.nextInt(100);
 		switch(x)
 		{
 			case 0 : 
