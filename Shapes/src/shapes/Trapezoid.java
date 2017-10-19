@@ -40,4 +40,9 @@ public class Trapezoid implements Shape
 	{
 		return base1 + base2 + side1 + side2;
 	}
+	
+	public String toString()
+	{
+		return "Trapezoid Side Length: " + side + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
+	}
 }

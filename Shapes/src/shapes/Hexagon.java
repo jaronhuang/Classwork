@@ -29,4 +29,9 @@ public class Hexagon implements Shape
 	{
 		return 6 * side;
 	}
+	
+	public String toString()
+	{
+		return "Hexagon Side Length: " + side + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
+	}
 }
