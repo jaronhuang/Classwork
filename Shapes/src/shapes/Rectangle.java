@@ -22,16 +22,25 @@ public class Rectangle implements Shape
 		this.width = width;
 	}
 	
+	/**
+	 * Returns the calculated area of a Rectangle
+	 */
 	public double calculateArea()
 	{
 		return (length*width);
 	}
 	
+	/**
+	 * Returns the calculated perimeter of a Rectangle
+	 */
 	public double calculatePerimeter()
 	{
 		return ((2*length) + (2*width));
 	}
 	
+	/**
+	 * Returns a string with the area and perimeter
+	 */
 	public String toString()
 	{
 		return "Rectangle Width: " + width + " Length: " + length + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();

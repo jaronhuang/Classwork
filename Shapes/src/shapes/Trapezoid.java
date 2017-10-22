@@ -11,7 +11,6 @@ public class Trapezoid implements Shape
 	private int base2;
 	private int side1;
 	private int side2;
-	private int height;
 	
 	/**
 	 * Constructor method
@@ -20,29 +19,37 @@ public class Trapezoid implements Shape
 	 * @param base2
 	 * @param side1
 	 * @param side2
-	 * @param height
 	 */
-	public Trapezoid (int base1, int base2, int side1, int side2, int height)
+	public Trapezoid (int base1, int base2, int side1, int side2)
 	{
 		this.base1 = base1;
 		this.base2 = base2;
 		this.side1 = side1;
 		this.side2 = side2;
-		this.height = height;
 	}
 	
+	/**
+	 * Calculates the area of the Trapezoid
+	 */
 	public double calculateArea()
 	{
+		double height = Math.sqrt((side1 * side1) - (Math.abs(base1 - base2)/2) * (Math.abs(base1 - base2)/2));
 		return (((base1 + base2) / 2) * height);
 	}
 	
+	/**
+	 * Calculates the perimeter of the Trapezoid
+	 */
 	public double calculatePerimeter()
 	{
 		return base1 + base2 + side1 + side2;
 	}
 	
+	/**
+	 * Returns a string with the area and perimeter
+	 */
 	public String toString()
 	{
-		return "Trapezoid Side Length: " + side + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
+		return "Trapezoid Side Length: " + side1 + ", " + side2 + "Base Length: " + base1 + ", " + base2  + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
 	}
 }

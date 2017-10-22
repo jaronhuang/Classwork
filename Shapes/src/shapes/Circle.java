@@ -40,6 +40,9 @@ public class Circle implements Shape
 		return (2*radius*pi);
 	}
 	
+	/**
+	 * Returns a string with the area and circumference 
+	 */
 	public String toString()
 	{
 		return "Circle Radius: " + radius + " Area: " + this.calculateArea() + " Circumference " + this.calculatePerimeter();

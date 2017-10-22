@@ -20,6 +20,9 @@ public class Square extends Rectangle
 		this.side = side;
 	}
 	
+	/**
+	 * Returns a string with the area and perimeter
+	 */
 	public String toString()
 	{
 		return "Square Side Length: " + side + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();

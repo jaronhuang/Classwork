@@ -28,7 +28,7 @@ public class ShapeUtilities
 			case 2:
 				return new Square(rand.nextInt(50));
 			case 3:
-				return new Trapezoid(rand.nextInt(20), rand.nextInt(20), rand.nextInt(20), rand.nextInt(20), rand.nextInt(20));
+				return new Trapezoid(rand.nextInt(25), rand.nextInt(25), rand.nextInt(25), rand.nextInt(25));
 			case 4:
 				return new Hexagon(rand.nextInt(100));
 			default:
