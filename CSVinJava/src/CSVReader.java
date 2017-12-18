@@ -88,8 +88,9 @@ class HighScore
 	}
 
 	@Override
-	public String toString() {
-		return "HighScore [name= " + name + ", score= " + score + "]";
+	public String toString() 
+	{
+		return "HighScores [name: " + name + ", score: " + score + "]";
 	}
 	
 	
